@@ -26,6 +26,7 @@ This project is a **Psychological Counseling Appointment System** designed to fa
 - Feedback submission and viewing
 - Role-based access control (RBAC)
 - Data validation and error handling
+- Parameterized HTML email delivery with SMTP, attachment support, retry tracking, and application properties based mail configurationzs
 
 ---
 ## Project Screenshots
@@ -44,4 +45,3 @@ This project is a **Psychological Counseling Appointment System** designed to fa
 ### Therapist Search and Feedback
 ![Search](src/assests/images/search.png)
 ![Review / Feedback](src/assests/images/review.png)
-

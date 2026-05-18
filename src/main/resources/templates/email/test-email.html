@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Mail</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
+
+<div style="background-color: white; padding: 20px; border-radius: 8px;">
+    <h2>Psikolojik Danışmanlık Platformu</h2>
+
+    <p>Merhaba <strong th:text="${name}">Kullanıcı</strong>,</p>
+
+    <p th:text="${message}">
+        Bu mail test için gönderildi.
+    </p>
+
+</div>
+
+</body>
+</html>

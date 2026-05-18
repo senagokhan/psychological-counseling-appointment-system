@@ -101,6 +101,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/api/appointments/*/status").hasAuthority("THERAPIST")
                         .requestMatchers(HttpMethod.POST, "/api/feedbacks/appointments/*").hasRole("CLIENT")
                         .requestMatchers(HttpMethod.GET, "/api/users/me").authenticated()
+                        .requestMatchers("/api/emails/**").authenticated()
                         .requestMatchers(HttpMethod.GET, "/api/appointments/{id}").hasAuthority("CLIENT")
                         .requestMatchers(HttpMethod.POST, "/api/therapists/*/availabilities").hasAuthority("CLIENT")
                         .requestMatchers("/api/appointments/**").permitAll()
@@ -113,4 +114,3 @@ public class SecurityConfig {
         return http.build();
     }
 }
-
